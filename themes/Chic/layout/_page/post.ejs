@@ -47,6 +47,42 @@
             <% } %>
         </header>
 
+        <%# JSON-LD Structured Data - BlogPosting %>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "<%= page.title %>",
+          "description": "<%= page.description || config.description || '' %>",
+          "url": "<%= page.permalink %>",
+          "datePublished": "<%= page.date %>",
+          "dateModified": "<%= page.updated || page.date %>",
+          "author": {
+            "@type": "Person",
+            "name": "<%= config.author || '' %>",
+            "url": "<%= config.url %>"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "<%= config.title %>",
+            "url": "<%= config.url %>",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "<%= config.url %><%- url_for(theme.avatar || theme.favicon) %>"
+            }
+          },
+          <% if(page.index_img){ %>"image": "<%= page.index_img %>",<% } %>
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "<%= page.permalink %>"
+          },
+          <% if(page.tags && page.tags.length){ %>
+          "keywords": "<%= page.tags.map(t => t.name).join(', ') %>",
+          <% } %>
+          "articleBody": "<%= page.content.replace(/<[^>]+>/g, '').substring(0, 500) %>..."
+        }
+        </script>
+
         <div class="post-content">
             <%- page.content %>
         </div>

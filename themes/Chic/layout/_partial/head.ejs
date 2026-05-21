@@ -84,3 +84,23 @@ if (is_archive()){
         <% } %>
     <% } %>
 <% } %>
+
+<%# JSON-LD Structured Data - WebSite %>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "<%= config.title %>",
+  "url": "<%= config.url %>",
+  "description": "<%= config.description || '' %>",
+  "author": {
+    "@type": "Person",
+    "name": "<%= config.author || '' %>"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "<%= config.url %>search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
