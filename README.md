@@ -6,6 +6,7 @@
 |------|------|------|----------|
 | 1.0.0 | 2026-05-21 | 981ce68 | 初始版本，Hexo 8.1.2 + Chic 主题 |
 | 1.0.1 | 2026-05-21 | b7f952b | 集成 Waline 评论系统，隐藏 Powered by 文字 |
+| 1.1.0 | 2026-05-21 | - | 文章重新排序，新增 404 页面，修复样式问题 |
 
 ## 项目信息
 
@@ -14,27 +15,56 @@
 - **主题**: Chic (自定义版本)
 - **Hexo版本**: 8.1.2
 - **Node版本**: 6.0+
+- **文章数量**: 183 篇
 
 ## 目录结构
 
 ```
-D:\CyberPK\
+D:\PKBlog\
 ├── .claude/          # Claude Code 配置
 ├── .github/          # GitHub 配置
 ├── _config.yml       # Hexo 站点配置
 ├── db.json           # Hexo 数据库
 ├── package.json      # 项目依赖
 ├── source/           # 站点源文件
-│   ├── _posts/       # 博客文章
+│   ├── _posts/       # 博客文章 (183篇，已按时间排序)
+│   ├── images/       # 文章图片资源
+│   ├── 404.md        # 404页面
 │   ├── about/        # 关于页面
 │   ├── category/     # 分类页面
 │   └── tag/          # 标签页面
 ├── themes/           # 主题
 │   └── Chic/         # Chic 主题 (本地修改版)
+│       ├── layout/   # 模板文件
+│       │   ├── 404.ejs           # 404页面模板
+│       │   └── _page/post.ejs    # 文章页模板
+│       └── source/   # 主题资源
+│           ├── css/  # 样式文件
+│           └── image/# 主题图片
 └── public/           # 生成的静态文件 (由 .gitignore 忽略)
 ```
 
 ## 最近修改内容
+
+### 2026-05-21 v1.1.0 - 文章排序与 404 页面
+
+**修改文件**:
+- `source/_posts/` - 所有文章按发布时间重新排序并重命名 (1.md ~ 183.md)
+- `themes/Chic/layout/404.ejs` - 新增 404 页面
+- `themes/Chic/source/css/_page/404.styl` - 404 页面样式
+- `themes/Chic/source/css/style.styl` - 引入 404 样式
+- `themes/Chic/layout/_page/post.ejs` - 修复评论框位置冲突
+- `themes/Chic/source/css/_page/_post/post_nav.styl` - 修复文章导航浮动问题
+- `_config.yml` - 新增 `post_copyright_enable` 配置
+
+**清理内容**:
+- 移除所有文章中的 `{% gi %}` / `{% endgi %}` 图库标签 (4篇文章)
+- 移除所有文章中的 `{% fold %}` / `{% endfold %}` 折叠标签 (9篇文章)
+
+**功能说明**:
+- 文章按发布时间的倒序重新排序并重命名为数字编号 (1~183)
+- 新增自定义 404 页面，包含返回首页和返回上一页按钮
+- 修复文章页上一页/下一页与评论框位置冲突问题
 
 ### 2026-05-21 - Waline 评论系统集成
 

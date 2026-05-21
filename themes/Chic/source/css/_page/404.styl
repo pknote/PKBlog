@@ -1,0 +1,55 @@
+.page-404
+  text-align center
+  padding 4rem 0
+
+  .page-title
+    font-size 6rem
+    font-weight bold
+    color $light-post-link-color
+    .dark-theme &
+      color $dark-post-link-color
+
+  .page-desc
+    font-size 1.2rem
+    color $light-font-secondary-color
+    margin 1rem 0 2rem
+    .dark-theme &
+      color $dark-font-secondary-color
+
+  .page-actions
+    display flex
+    justify-content center
+    gap 1rem
+
+    a
+      display inline-block
+      padding 0.8rem 2rem
+      border-radius 4px
+      font-weight 600
+      transition all 0.3s ease
+
+    .btn-home
+      background $light-post-link-color
+      color #fff
+      .dark-theme &
+        background $dark-post-link-color
+        color #fff
+
+      &:hover
+        transform translateY(-2px)
+        box-shadow 0 4px 12px rgba(0,0,0,0.15)
+
+    .btn-back
+      background transparent
+      border 1px solid $light-border-color
+      color $light-font-color
+      .dark-theme &
+        border-color $dark-border-color
+        color $dark-font-color
+
+      &:hover
+        border-color $light-post-link-color
+        color $light-post-link-color
+        .dark-theme &
+          border-color $dark-post-link-color
+          color $dark-post-link-color
