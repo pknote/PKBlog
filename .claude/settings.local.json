@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(npm view:*)",
+      "Bash(npm search:*)",
+      "Bash(claude --version)",
+      "Bash(where claude:*)",
+      "Bash(cmd //c \"mklink C:\\\\Users\\\\admin\\\\.local\\\\bin\\\\claude.exe C:\\\\Program Files\\\\ClaudeCode\\\\claude.exe\")",
+      "Bash(npm init:*)",
+      "Bash(npm list:*)",
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npx hexo:*)",
+      "Bash(mv system:*)",
+      "Bash(mv tutorials:*)",
+      "Bash(head:*)",
+      "Bash(ls:*)",
+      "Bash(npx generate:*)",
+      "WebFetch(domain:img.meituan.net)",
+      "Bash(curl -s http://localhost:4000/os/)",
+      "Bash(curl -s http://localhost:4000/)",
+      "Bash(curl -s http://localhost:4000/tools/)",
+      "Bash(npm run:*)",
+      "Bash(curl -sI \"https://cdn.jsdelivr.net/npm/waline@2/dist/waline.js\")",
+      "Bash(curl -sI \"https://cdn.jsdelivr.net/npm/@waline/client@2/dist/waline.js\")",
+      "Bash(curl -sI \"https://cdn.jsdelivr.net/npm/@waline/client@3/dist/waline.min.js\")",
+      "Bash(curl -sI \"https://cdn.jsdelivr.net/npm/@waline/client@1/dist/waline.js\")",
+      "Bash(curl -sI \"https://cdn.jsdelivr.net/npm/@waline/client@2.17.0/dist/waline.js\")",
+      "Bash(curl -s \"https://cdn.jsdelivr.net/npm/@waline/client@2/dist/waline.js\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
