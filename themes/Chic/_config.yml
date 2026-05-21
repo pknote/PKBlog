@@ -9,14 +9,14 @@ nav:
   关于: /about
 
 # favicon
-favicon: https://web.pknote.top/favicon.ico
+favicon: /favicon.ico
 
 # Profile
 nickname: 胖氪不胖
 
 ### this variable is MarkDown form.
 description: Code Write and Share.
-avatar: https://web.pknote.top/img/navilogo.png
+avatar: /image/favicon.png
 
 # main menu navigation
 ## links key words should not be changed.
@@ -48,7 +48,7 @@ links:
   # YouTube:
   # QQ:
   # Weibo:
-  WeChat: https://web.pknote.top/img/wxgzhqrcode.webp
+  WeChat: /image/wxgzh.webp
   Github: https://github.com/pknote
 
 # how links show: you have 2 choice--text or icon.
