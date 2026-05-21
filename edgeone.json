@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "path": "/*",
+      "target": "https://windowsplus.cn/:path",
+      "statusCode": 301,
+      "condition": "HOST_EQUALS www.windowsplus.cn"
+    }
+  ]
+}
