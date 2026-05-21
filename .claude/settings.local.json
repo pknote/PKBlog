@@ -37,7 +37,32 @@
       "Bash(rm -rf .git/modules/themes/Chic)",
       "Bash(curl -s \"https://cdn.jsdelivr.net/npm/@waline/client@2/dist/waline.css\")",
       "Bash(git remote:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git tag:*)",
+      "Bash(gh api:*)",
+      "Bash(git fetch:*)",
+      "WebFetch(domain:cloud.tencent.com)",
+      "Bash(perl:*)",
+      "Bash(grep -n \"^#### \" *.md)",
+      "Bash(grep -n \"^### \" *.md)",
+      "Bash(grep -l \"^#### \" *.md)",
+      "Bash(grep -l \"^### \" *.md)",
+      "Bash(grep -l \"^###\" *.md)",
+      "Bash(grep -roh 'https\\\\?://[^ \"\\)]*\\\\.\\\\\\(jpg\\\\|jpeg\\\\|png\\\\|gif\\\\|webp\\\\|svg\\\\\\)[^ \"\\)]*' source/_posts/*.md)",
+      "Bash(grep -o '/images/' source/_posts/*.md)",
+      "Bash(grep -oh 'https://img\\\\.pknote\\\\.top/blog/[^\\)]*' source/_posts/*.md)",
+      "Bash(grep -oh 'https://[^\"]*pknote[^\"]*\\\\.\\\\\\(jpg\\\\|jpeg\\\\|png\\\\|gif\\\\|webp\\\\|svg\\\\\\)' source/_posts/*.md)",
+      "Bash(grep -E \"\\\\.\\(jpg|png|gif|webp|jpeg\\)-m$\")",
+      "Bash(grep -r \"\\\\-m\\\\.\" /d/PKBlog/source/_posts/*.md)",
+      "Bash(grep -oh '/images/[^\"]*\\\\-m\\\\.' /d/PKBlog/source/_posts/*.md)",
+      "Bash(python -c \"from PIL import Image; print\\('Pillow available'\\)\")",
+      "Bash(pip install:*)",
+      "Bash(node -e ':*)",
+      "Bash(grep -oh '/images/[^\"]*\\\\.\\\\\\(png\\\\|jpg\\\\|jpeg\\\\\\)' /d/PKBlog/source/_posts/*.md)",
+      "Bash(grep -oh '/images/[^\"]*\\\\.jpeg\\\\|/images/[^\"]*\\\\.jpg\\\\|/images/[^\"]*\\\\.png' /d/PKBlog/source/_posts/*.md)",
+      "Bash(node:*)",
+      "Bash(find . -name \"*.comp\" -delete)",
+      "Bash(find . -name \"*.tmp\" -delete)"
     ]
   }
 }
