@@ -14,6 +14,25 @@
 <% if(config.keywords){ %>
     <meta name="keywords" content="<%- config.keywords %>">
 <% } %>
+
+<%# Open Graph %>
+<meta property="og:type" content="website">
+<meta property="og:title" content="<%= config.title %>">
+<meta property="og:url" content="<%= config.url %>">
+<meta property="og:site_name" content="<%= config.title %>">
+<% if(config.description){ %>
+<meta property="og:description" content="<%- config.description %>">
+<% } %>
+<% if(theme.avatar){ %>
+<meta property="og:image" content="<%= config.url %><%- url_for(theme.avatar) %>">
+<% } %>
+
+<%# Twitter Card %>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="<%= config.title %>">
+<% if(config.description){ %>
+<meta name="twitter:description" content="<%- config.description %>">
+<% } %>
 <%
 var title = page.title;
 
