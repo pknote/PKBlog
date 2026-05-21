@@ -9,14 +9,14 @@ nav:
   关于: /about
 
 # favicon
-favicon: https://web.pknote.top/img/favicon.svg
+favicon: https://web.pknote.top/favicon.ico
 
 # Profile
 nickname: 胖氪不胖
 
 ### this variable is MarkDown form.
 description: Code Write and Share.
-avatar: https://web.pknote.top/img/logo.svg
+avatar: https://web.pknote.top/img/navilogo.png
 
 # main menu navigation
 ## links key words should not be changed.
@@ -81,7 +81,7 @@ page_title_enable: true
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: MMMM D, YYYY
+date_format: Y-MM-DD
 time_format: H:mm:ss
 
 # stylesheets loaded in the <head>

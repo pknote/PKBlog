@@ -10,22 +10,21 @@
             <h1 class="post-title"><%= page.title %></h1>
             <% if(theme.post_meta_enable){ %>
                 <div class="post-meta">
-                    <% if(theme.post_author_enable && config.author){ %>
-                        Author: <a itemprop="author" rel="author" href="/"><%- config.author %></a>
-                    <% } %>
-
-                    <% if(page.date && theme.post_date_enable){ %>
-                        <span class="post-time">
-                        Date: <a href="#"><%- date(page.date, theme.date_format)  %>&nbsp;&nbsp;<%- time(page.date, theme.time_format)%></a>
-                        </span>
-                    <% } %>
                     <% if(page.categories.length!==0 && theme.post_category_enable){ %>
                         <span class="post-category">
-                    Category:
+                    分类:
                             <% page.categories.forEach(item=>{ %>
                                 <a href="<%- url_for(item.path) %>"><%- item.name %></a>
                             <% }) %>
                         </span>
+                    <% } %>
+                    <% if(page.date && theme.post_date_enable){ %>
+                        <span class="post-time">
+                        日期: <a href="#"><%- date(page.date, theme.date_format)  %></a>
+                        </span>
+                    <% } %>
+                    <% if(theme.post_author_enable && config.author){ %>
+                        浏览: <a itemprop="author" rel="author" href="#"><span id="busuanzi_page_pv"></span></a>
                     <% } %>
                 </div>
             <% } %>

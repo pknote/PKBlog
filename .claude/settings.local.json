@@ -31,7 +31,13 @@
       "Bash(curl -s \"https://cdn.jsdelivr.net/npm/@waline/client@2/dist/waline.js\")",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git submodule:*)",
+      "Bash(git rm:*)",
+      "Bash(rm -rf .git/modules/themes/Chic)",
+      "Bash(curl -s \"https://cdn.jsdelivr.net/npm/@waline/client@2/dist/waline.css\")",
+      "Bash(git remote:*)",
+      "Bash(git push:*)"
     ]
   }
 }
