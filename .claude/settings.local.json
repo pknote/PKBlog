@@ -62,7 +62,15 @@
       "Bash(grep -oh '/images/[^\"]*\\\\.jpeg\\\\|/images/[^\"]*\\\\.jpg\\\\|/images/[^\"]*\\\\.png' /d/PKBlog/source/_posts/*.md)",
       "Bash(node:*)",
       "Bash(find . -name \"*.comp\" -delete)",
-      "Bash(find . -name \"*.tmp\" -delete)"
+      "Bash(find . -name \"*.tmp\" -delete)",
+      "Bash(grep -l \"index_img\\\\|banner_img\" D:/PKBlog/source/_posts/*.md)",
+      "Bash(grep -l \"^!\\\\[\" D:/PKBlog/source/_posts/*.md)",
+      "Bash(grep -c \"^!\\\\[\" D:/PKBlog/source/_posts/*.md)",
+      "Bash(grep -v \":0$\")",
+      "Bash(grep -l 'application/ld+json' D:/PKBlog/public/*.html)",
+      "Bash(grep -n \"partial\\\\|include\" D:/PKBlog/themes/Chic/layout/*.ejs)",
+      "Bash(grep -c \"index_img:\" D:/PKBlog/source/_posts/*.md)",
+      "Bash(grep -c \"index_img\" D:/PKBlog/source/_posts/*.md)"
     ]
   }
 }
