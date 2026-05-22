@@ -85,12 +85,6 @@
                         <span><a href="<%- page.permalink %>"><%- page.permalink %></a></span>
                     </p>
                 <% } %>
-                <% if(theme.post_copyright_license_enable){ %>
-                    <p class="copyright-item">
-                        <span>授权:</span>
-                        <span><%- theme.post_copyright_license_text %></span>
-                    </p>
-                <% } %>
                 <% if(theme.post_copyright_slogan_enable){ %>
                      <p class="copyright-item">
                          <span>公告:</span>
@@ -112,7 +106,7 @@
                 </span>
             </div>
             <div>
-                <a href="javascript:window.history.back();">上一页</a>
+                <a href="javascript:window.history.back();">返回</a>
                 <span>· </span>
                 <a href="<%- config.root %>">首页</a>
             </div>

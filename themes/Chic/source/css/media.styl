@@ -1,7 +1,9 @@
 /* mobile phone and smart portable devices */
-@media screen and (max-width: 479px) 
+@media screen and (max-width: 479px)
   .main
     padding-top 40pt
+    width 100%
+    box-sizing border-box
   .navbar
     display: none
 
@@ -108,26 +110,36 @@
   
 
   .archive
-    width 90%
+    width 95%
+    padding 0.5rem
+    box-sizing border-box
+    h3
+      padding-top 1rem
     & .archive-item
-      .archive-item-date
-        display none
+      margin-left 0
+      margin-bottom 0.5rem
+
+  .pagination
+    white-space nowrap
+    a, span
+      padding 2px 6px
+      font-size 12px
+    .page-number
+      margin 0 5px
 
 
   #dynamic-to-top 
     display: none !important
   
-  .footer 
-    height: 3rem
-    width: 100%
+  .footer
+    height: auto
+    width: 95%
     text-align: center
     line-height: 1.5rem
-    padding-top: 2em
+    padding: 1em 0
 
-  .post-warp
-    padding-top: 6em
-    .archive-item-date
-      display: none
+  .post-wrap
+    width 100%
 
   .categories
     .categories-card
@@ -151,6 +163,19 @@
   .navbar-mobile
     display none
 
+
+/* post-content mobile */
+@media screen and (max-width: 479px)
+  .post-content
+    img, pre, figure
+      max-width 100%
+      overflow-x auto
+    table
+      font-size 12px
+    p
+      word-wrap break-word
+      overflow-wrap break-word
+      word-break break-all
 
 /* post toc Style */
 @media screen and (max-width: 1279px) // 最大宽度1279px时应用这条规则。（最大宽度小于1279px返回false，屏蔽规则。）
