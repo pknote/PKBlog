@@ -101,3 +101,13 @@ theme: Chic
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+html_minifier:
+  enable: true
+  collapseWhitespace: true
+  removeComments: true
+  removeRedundantAttr: true
+  minifyCSS: true
+  minifyJS: true
+  conservativeCollapse: true
+  preserveLineBreaks: false
