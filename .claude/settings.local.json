@@ -70,7 +70,9 @@
       "Bash(grep -l 'application/ld+json' D:/PKBlog/public/*.html)",
       "Bash(grep -n \"partial\\\\|include\" D:/PKBlog/themes/Chic/layout/*.ejs)",
       "Bash(grep -c \"index_img:\" D:/PKBlog/source/_posts/*.md)",
-      "Bash(grep -c \"index_img\" D:/PKBlog/source/_posts/*.md)"
+      "Bash(grep -c \"index_img\" D:/PKBlog/source/_posts/*.md)",
+      "Bash(grep -n \"post-content\\\\|\\\\.post\" D:/PKBlog/themes/Chic/source/css/*.styl D:/PKBlog/themes/Chic/source/css/**/*.styl)",
+      "Bash(grep -n \"wrapper\\\\|\\\\.main\\\\|container\" D:/PKBlog/themes/Chic/source/css/*.styl D:/PKBlog/themes/Chic/source/css/**/*.styl)"
     ]
   }
 }
