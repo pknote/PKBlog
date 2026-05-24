@@ -53,7 +53,7 @@ date: 2026-05-09 13:36:06
 
 ## 联系博主：
 
-邮箱 base64 码：MTA3MDk5NDIwNUBxcS5jb20=
+邮箱 base64 码：MTA3MDk5NDIwNUBxcS5jb20=（[←解码](https://base64.us/)）
 
 
 
@@ -89,6 +89,6 @@ date: 2026-05-09 13:36:06
 
 2024-05-08 **胖氪笔记** 个人博客更换到 [**Hexo**](https://hexo.io/) 平台，抛弃后端、抛弃数据库，启用 [**Fluid**](https://github.com/fluid-dev/hexo-theme-fluid) 主题。
 
-2026-05-12 改名为 **赛博胖氪** 个人博客主题更换为 [**Chic**](https://github.com/Siricee/hexo-theme-Chic) ，如您所见。
+2026-05-12 改名为 **赛博胖氪** 个人博客主题更换为 [**Chic**](https://github.com/Siricee/hexo-theme-Chic) ，如您所见，专注文字。
 
 **未完待续。。。**
