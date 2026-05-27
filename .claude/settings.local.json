@@ -72,7 +72,9 @@
       "Bash(grep -c \"index_img:\" D:/PKBlog/source/_posts/*.md)",
       "Bash(grep -c \"index_img\" D:/PKBlog/source/_posts/*.md)",
       "Bash(grep -n \"post-content\\\\|\\\\.post\" D:/PKBlog/themes/Chic/source/css/*.styl D:/PKBlog/themes/Chic/source/css/**/*.styl)",
-      "Bash(grep -n \"wrapper\\\\|\\\\.main\\\\|container\" D:/PKBlog/themes/Chic/source/css/*.styl D:/PKBlog/themes/Chic/source/css/**/*.styl)"
+      "Bash(grep -n \"wrapper\\\\|\\\\.main\\\\|container\" D:/PKBlog/themes/Chic/source/css/*.styl D:/PKBlog/themes/Chic/source/css/**/*.styl)",
+      "Bash(git checkout:*)",
+      "Bash(python3:*)"
     ]
   }
 }
