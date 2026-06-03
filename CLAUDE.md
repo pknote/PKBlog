@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Hexo blog site (赛博胖氪 - windowsplus.cn). It uses Hexo 8.x with a customized Keep theme.
+This is a Hexo blog site (赛博胖氪 - windowsplus.cn). It uses Hexo 8.x with a customized Chic theme.
 
 ## Common Commands
 
@@ -19,22 +19,22 @@ hexo new <title>  # Create new post
 ## Architecture
 
 - **Hexo framework**: Static site generator with EJS templates, Marked renderer, Stylus CSS
-- **Theme**: Keep (customized) at `themes/Keep/`
+- **Theme**: Chic (customized) at `themes/Chic/`
   - Layouts: `themes/Chic/layout/` (EJS templates)
   - Styles: `themes/Chic/source/css/` (Stylus)
   - Assets: `themes/Chic/source/` (images, js)
 - **Content**: Blog posts in `source/_posts/` (166 posts, numbered 1-163+)
 - **Images**: Local images in `source/images/` (WebP/GIF format)
-- **SEO**: Implemented via `themes/Keep/layout/_partial/head.ejs` - canonical URLs, Open Graph, Twitter Cards, JSON-LD
+- **SEO**: Implemented via `themes/Chic/layout/_partial/head.ejs` - canonical URLs, Open Graph, Twitter Cards, JSON-LD
 - **Comments**: Waline (configured in theme `_config.yml`)
 - **HTML compression**: `hexo-html-minifier` configured in root `_config.yml`
 
 ## Key Files
 
 - `_config.yml` - Site-wide Hexo configuration
-- `themes/Keep/_config.yml` - Theme configuration (comments, analytics, nav, links)
-- `themes/Keep/layout/_partial/head.ejs` - SEO meta tags
-- `themes/Keep/layout/_page/post.ejs` - Article page template
+- `themes/Chic/_config.yml` - Theme configuration (comments, analytics, nav, links)
+- `themes/Chic/layout/_partial/head.ejs` - SEO meta tags
+- `themes/Chic/layout/_page/post.ejs` - Article page template
 
 ## Notes
 
