@@ -74,7 +74,15 @@
       "Bash(grep -n \"post-content\\\\|\\\\.post\" D:/PKBlog/themes/Chic/source/css/*.styl D:/PKBlog/themes/Chic/source/css/**/*.styl)",
       "Bash(grep -n \"wrapper\\\\|\\\\.main\\\\|container\" D:/PKBlog/themes/Chic/source/css/*.styl D:/PKBlog/themes/Chic/source/css/**/*.styl)",
       "Bash(git checkout:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(git config:*)",
+      "Bash(curl -I https://github.com)",
+      "Bash(curl -I --proxy http://127.0.0.1:10809 https://github.com)",
+      "Bash(env)",
+      "Bash(gh auth:*)",
+      "Bash(curl -v https://github.com)",
+      "Bash(git --version)",
+      "Bash(nslookup:*)"
     ]
   }
 }
