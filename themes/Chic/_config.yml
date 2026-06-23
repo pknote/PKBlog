@@ -4,7 +4,6 @@ navname: 赛博胖氪
 # navigatior items
 nav:
   文章: /archives
-  分类: /category
   标签: /tag
   关于: /about
 
@@ -24,7 +23,6 @@ avatar: /image/favicon.png
 ## Unused key can be commented out.
 links:
   Blog: /archives
-  # Category:
   # Tags: 
   Link: https://pknote.top/
   # Resume:
@@ -61,7 +59,7 @@ post_meta_enable: true
 
 post_author_enable: true
 post_date_enable: true
-post_category_enable: true
+post_category_enable: false
 ## Post copyright
 post_copyright_enable: true
 
@@ -105,9 +103,23 @@ mathjax:
   ## global: all pages will load mathjax,this will degrade performance and some grammers may be parsed wrong.
   ## demand: Recommend option,if your post need fomula, you can declare 'mathjax: true' in Front-matter
 
-# Waline Comment System
+# Waline Comment System (disabled)
 ## https://waline.js.org
-waline:
+# waline:
+#   enable: true
+#   serverURL: https://waline.windowsplus.cn/
+#   darkMode: true
+
+# Giscus Comment System
+## https://giscus.app
+giscus:
   enable: true
-  serverURL: https://waline.windowsplus.cn/
-  darkMode: true
+  repo: "pknote/PKBlog"
+  repoId: "R_kgDOOM9TQA"
+  category: "Announcements"
+  categoryId: "DIC_kwDOOM9TQc4Cpsgo"
+  mapping: "pathname"
+  reactionsEnabled: "1"
+  emitMetadata: "0"
+  inputPosition: "bottom"
+  lang: "zh-CN"
